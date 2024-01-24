@@ -1,0 +1,81 @@
+body{
+    background-image: url(./toxic.jpg);
+    background-repeat: no-repeat;
+}
+.box
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 115, 255);
+    margin-top: 64px;
+    margin-left: 43px;
+    animation: 10s toxic infinite;
+    border-radius: 10px;
+}
+@keyframes toxic {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    10%{
+        top: 0;
+        left: 225px;
+        border-radius: 5%;
+
+    }
+    20%{
+        top: 240px;
+        left: 225px;
+        background-color: red;
+        border-radius: 10%;
+    }
+    30%{
+        top: 240px;
+        left: 780px;
+        background-color: aqua;
+        border-radius: 15%;
+    }
+    40%{
+        top: 370px;
+        left: 780px;
+        border-radius: 20%;
+        background-color: blue;
+    }
+    50%{
+        top: 370px;
+        left: 470px;
+        border-radius: 5px;
+        background-color: yellow;
+    }
+    60%{
+        top: 325px;
+        left: 470px;
+        background-color: beige;
+        border-radius: 50%;
+    }
+    70%{
+        top: 325px;
+        left: 240px;
+        background-color: green;
+        border-radius: 10px;
+    }
+    80%{
+        top: 220px;
+        left: 100px;
+        background-color: blueviolet;
+        border-radius: 15px;
+    }
+    90%{
+        top: 220px;
+        left: 5px;
+        background-color: white;
+        border-radius: 100%;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: black;
+        border-radius: 20px;
+    }
+}
